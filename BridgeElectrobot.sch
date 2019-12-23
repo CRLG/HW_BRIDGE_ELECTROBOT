@@ -1,0 +1,453 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "BRIGE_ELECTROBOT"
+Date ""
+Rev ""
+Comp "CRLG"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CRLG-Connectors:Conn_XT30M J2
+U 1 1 5DFFEE77
+P 1175 1550
+F 0 "J2" H 1093 1233 50  0000 C CNN
+F 1 "Conn_XT30M" H 1093 1324 50  0000 C CNN
+F 2 "XT30:AMASS_XT30UPB-M_1x02_P5.0mm_Vertical" H 1175 1550 50  0001 C CNN
+F 3 "" H 1175 1550 50  0001 C CNN
+	1    1175 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L CRLG-Connectors:Conn_XT30F J3
+U 1 1 5DFFFCEE
+P 5950 2200
+F 0 "J3" H 6030 2200 50  0000 L CNN
+F 1 "Conn_XT30F" H 6030 2109 50  0000 L CNN
+F 2 "XT30:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical" H 5950 2200 50  0001 C CNN
+F 3 "" H 5950 2200 50  0001 C CNN
+	1    5950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRLG-Connectors:Conn_01x04 J1
+U 1 1 5E00004D
+P 750 2600
+F 0 "J1" H 668 2917 50  0000 C CNN
+F 1 "Conn_01x04" H 668 2826 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 750 2600 50  0001 C CNN
+F 3 "" H 750 2600 50  0001 C CNN
+	1    750  2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CRLG_HBridgesMotorDrivers:VNH7070AS U1
+U 1 1 5E00B43A
+P 3275 2700
+F 0 "U1" H 2725 3850 50  0000 C CNN
+F 1 "VNH7070AS" H 2875 3750 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3325 1650 50  0001 L CNN
+F 3 "" H 3275 2800 50  0001 C CNN
+	1    3275 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1375 1450 1750 1450
+Wire Wire Line
+	3675 1450 3675 1500
+Wire Wire Line
+	3475 1450 3475 1500
+Connection ~ 3475 1450
+Wire Wire Line
+	3475 1450 3675 1450
+Wire Wire Line
+	3275 1500 3275 1450
+Connection ~ 3275 1450
+Wire Wire Line
+	3275 1450 3475 1450
+Wire Wire Line
+	2875 3900 3075 3900
+Wire Wire Line
+	3375 3900 3200 3900
+Connection ~ 3075 3900
+Wire Wire Line
+	3375 3900 3575 3900
+Connection ~ 3375 3900
+$Comp
+L power:GND #PWR06
+U 1 1 5E00D782
+P 3200 3975
+F 0 "#PWR06" H 3200 3725 50  0001 C CNN
+F 1 "GND" H 3205 3802 50  0000 C CNN
+F 2 "" H 3200 3975 50  0001 C CNN
+F 3 "" H 3200 3975 50  0001 C CNN
+	1    3200 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3975 3200 3900
+Connection ~ 3200 3900
+Wire Wire Line
+	3200 3900 3075 3900
+$Comp
+L CRLG-Passive:LED D2
+U 1 1 5E00E16F
+P 5575 1100
+F 0 "D2" V 5500 1175 45  0000 L CNN
+F 1 "ROUGE" V 5675 950 45  0000 L CNN
+F 2 "LED_SMD:LED_1206_3216Metric" V 5375 1100 20  0001 C CNN
+F 3 "" H 5575 1100 50  0001 C CNN
+	1    5575 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L CRLG-Passive:LED D1
+U 1 1 5E00EB12
+P 5475 1475
+F 0 "D1" V 5400 1300 45  0000 C CNN
+F 1 "VERTE" V 5575 1425 45  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" V 5275 1475 20  0001 C CNN
+F 3 "" H 5475 1475 50  0001 C CNN
+	1    5475 1475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CRLG-Passive:R R6
+U 1 1 5E011925
+P 5100 1275
+F 0 "R6" V 4893 1275 50  0000 C CNN
+F 1 "4.8k" V 4984 1275 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5030 1275 50  0001 C CNN
+F 3 "" H 5100 1275 50  0001 C CNN
+	1    5100 1275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5375 1100 5375 1275
+Wire Wire Line
+	5250 1275 5375 1275
+Connection ~ 5375 1275
+Wire Wire Line
+	5375 1275 5375 1475
+Wire Wire Line
+	5675 1100 5675 1275
+Connection ~ 5675 1275
+Wire Wire Line
+	5675 1275 5675 1475
+Wire Wire Line
+	4950 1275 4725 1275
+Wire Wire Line
+	4075 2000 4075 2050
+Wire Wire Line
+	4075 2400 4075 2450
+Wire Wire Line
+	4075 2450 5750 2450
+Wire Wire Line
+	5750 2450 5750 2300
+Connection ~ 4075 2450
+Wire Wire Line
+	4075 2450 4075 2500
+Wire Wire Line
+	4075 2050 5750 2050
+Connection ~ 4075 2050
+Wire Wire Line
+	4075 2050 4075 2100
+Wire Wire Line
+	5750 2050 5750 2200
+Text Label 4225 2050 0    50   ~ 0
+OUTA
+Text Label 4725 1275 0    50   ~ 0
+OUTA
+Text Label 4250 2450 0    50   ~ 0
+OUTB
+Text Label 5750 1275 0    50   ~ 0
+OUTB
+Wire Wire Line
+	5675 1275 5975 1275
+$Comp
+L power:GND #PWR01
+U 1 1 5E018ECC
+P 1375 1625
+F 0 "#PWR01" H 1375 1375 50  0001 C CNN
+F 1 "GND" H 1380 1452 50  0000 C CNN
+F 2 "" H 1375 1625 50  0001 C CNN
+F 3 "" H 1375 1625 50  0001 C CNN
+	1    1375 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1375 1550 1375 1625
+$Comp
+L CRLG-Passive:R R1
+U 1 1 5E01A216
+P 2075 2500
+F 0 "R1" V 2000 2600 50  0000 C CNN
+F 1 "1k" V 2000 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2005 2500 50  0001 C CNN
+F 3 "" H 2075 2500 50  0001 C CNN
+	1    2075 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L CRLG-Passive:R R2
+U 1 1 5E01AA22
+P 2075 2700
+F 0 "R2" V 2000 2775 50  0000 C CNN
+F 1 "1k" V 2000 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2005 2700 50  0001 C CNN
+F 3 "" H 2075 2700 50  0001 C CNN
+	1    2075 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L CRLG-Passive:R R3
+U 1 1 5E01BB40
+P 2075 2900
+F 0 "R3" V 2000 2975 50  0000 C CNN
+F 1 "1k" V 2000 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2005 2900 50  0001 C CNN
+F 3 "" H 2075 2900 50  0001 C CNN
+	1    2075 2900
+	0    1    1    0   
+$EndComp
+Text Notes 1600 1100 0    50   ~ 0
+Condensateur 220µF/25V\nRS: 766-0066
+$Comp
+L CRLG-Passive:CP C1
+U 1 1 5E0228DD
+P 1750 1650
+F 0 "C1" H 1868 1696 50  0000 L CNN
+F 1 "220u" H 1868 1605 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm" H 1788 1500 50  0001 C CNN
+F 3 "" H 1750 1650 50  0001 C CNN
+	1    1750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CRLG-Passive:C C2
+U 1 1 5E0231AE
+P 2225 1650
+F 0 "C2" H 2340 1696 50  0000 L CNN
+F 1 "100n" H 2340 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2263 1500 50  0001 C CNN
+F 3 "" H 2225 1650 50  0001 C CNN
+	1    2225 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E023C5D
+P 1750 1875
+F 0 "#PWR02" H 1750 1625 50  0001 C CNN
+F 1 "GND" H 1755 1702 50  0000 C CNN
+F 2 "" H 1750 1875 50  0001 C CNN
+F 3 "" H 1750 1875 50  0001 C CNN
+	1    1750 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E023E59
+P 2225 1875
+F 0 "#PWR04" H 2225 1625 50  0001 C CNN
+F 1 "GND" H 2230 1702 50  0000 C CNN
+F 2 "" H 2225 1875 50  0001 C CNN
+F 3 "" H 2225 1875 50  0001 C CNN
+	1    2225 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1500 1750 1450
+Connection ~ 1750 1450
+Wire Wire Line
+	1750 1450 2225 1450
+Wire Wire Line
+	2225 1500 2225 1450
+Connection ~ 2225 1450
+Wire Wire Line
+	1750 1800 1750 1875
+Wire Wire Line
+	2225 1800 2225 1875
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E02A46F
+P 2400 4900
+F 0 "H2" H 2500 4949 50  0000 L CNN
+F 1 "MountingHole_Pad" V 2275 4525 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 2400 4900 50  0001 C CNN
+F 3 "~" H 2400 4900 50  0001 C CNN
+	1    2400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E02AD8C
+P 2400 5050
+F 0 "#PWR05" H 2400 4800 50  0001 C CNN
+F 1 "GND" H 2405 4877 50  0000 C CNN
+F 2 "" H 2400 5050 50  0001 C CNN
+F 3 "" H 2400 5050 50  0001 C CNN
+	1    2400 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5050 2400 5000
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E02CB1D
+P 1975 4900
+F 0 "H1" H 2075 4949 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1850 4525 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 1975 4900 50  0001 C CNN
+F 3 "~" H 1975 4900 50  0001 C CNN
+	1    1975 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E02CB27
+P 1975 5050
+F 0 "#PWR03" H 1975 4800 50  0001 C CNN
+F 1 "GND" H 1980 4877 50  0000 C CNN
+F 2 "" H 1975 5050 50  0001 C CNN
+F 3 "" H 1975 5050 50  0001 C CNN
+	1    1975 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1975 5050 1975 5000
+Text Notes 1825 4500 0    50   ~ 0
+Trous de fixation M3
+Text Notes 4750 1750 0    50   ~ 0
+LED d'indication du sens de rotation
+Wire Wire Line
+	2225 1450 3275 1450
+Text Label 1525 1450 0    50   ~ 0
+VCC
+Wire Wire Line
+	950  2500 1325 2500
+Text Label 975  2500 0    50   ~ 0
+GND
+Wire Wire Line
+	950  2600 1325 2600
+Wire Wire Line
+	950  2700 1325 2700
+Wire Wire Line
+	950  2800 1325 2800
+Wire Wire Line
+	1925 2500 1550 2500
+Wire Wire Line
+	1925 2700 1550 2700
+Wire Wire Line
+	1925 2900 1550 2900
+Text Label 1550 2500 0    50   ~ 0
+_INA
+Text Label 1550 2700 0    50   ~ 0
+_INB
+Text Label 1550 2900 0    50   ~ 0
+_PWM
+Wire Wire Line
+	2225 2500 2475 2500
+Wire Wire Line
+	2225 2700 2475 2700
+Wire Wire Line
+	2225 2900 2475 2900
+Text Label 2275 2500 0    50   ~ 0
+INA
+Text Label 2275 2700 0    50   ~ 0
+INB
+Text Label 2275 2900 0    50   ~ 0
+PWM
+Wire Wire Line
+	2475 3300 2225 3300
+Text Label 2225 3300 0    50   ~ 0
+INA
+Text Notes 1175 3400 0    50   ~ 0
+SEL0 = INA  \nCS = Monitoring courant\n(voir table de vérité)
+$Comp
+L CRLG-Passive:R R4
+U 1 1 5E067124
+P 4175 3150
+F 0 "R4" H 4075 3150 50  0000 C CNN
+F 1 "R" H 4100 3075 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4105 3150 50  0001 C CNN
+F 3 "" H 4175 3150 50  0001 C CNN
+	1    4175 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L CRLG-Passive:R R5
+U 1 1 5E0678DF
+P 4475 2900
+F 0 "R5" V 4575 2950 50  0000 C CNN
+F 1 "10k" V 4375 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4405 2900 50  0001 C CNN
+F 3 "" H 4475 2900 50  0001 C CNN
+	1    4475 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CRLG-Passive:C C3
+U 1 1 5E067CE5
+P 4750 3150
+F 0 "C3" H 4865 3196 50  0000 L CNN
+F 1 "10n" H 4865 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4788 3000 50  0001 C CNN
+F 3 "" H 4750 3150 50  0001 C CNN
+	1    4750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5E0684A1
+P 4750 2900
+F 0 "TP1" H 4808 3018 50  0000 L CNN
+F 1 "TestPoint" H 4808 2927 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 2900 50  0001 C CNN
+F 3 "~" H 4950 2900 50  0001 C CNN
+	1    4750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5E069474
+P 4450 3400
+F 0 "#PWR07" H 4450 3150 50  0001 C CNN
+F 1 "GND" H 4455 3227 50  0000 C CNN
+F 2 "" H 4450 3400 50  0001 C CNN
+F 3 "" H 4450 3400 50  0001 C CNN
+	1    4450 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4175 3300 4450 3300
+Wire Wire Line
+	4450 3300 4450 3400
+Wire Wire Line
+	4450 3300 4750 3300
+Connection ~ 4450 3300
+Wire Wire Line
+	4075 2900 4175 2900
+Wire Wire Line
+	4175 3000 4175 2900
+Connection ~ 4175 2900
+Wire Wire Line
+	4175 2900 4325 2900
+Wire Wire Line
+	4625 2900 4750 2900
+Wire Wire Line
+	4750 3000 4750 2900
+Connection ~ 4750 2900
+Text Label 975  2600 0    50   ~ 0
+_INA
+Text Label 975  2700 0    50   ~ 0
+_INB
+Text Label 975  2800 0    50   ~ 0
+_PWM
+$EndSCHEMATC
