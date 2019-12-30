@@ -122,7 +122,7 @@ L CRLG-Passive:R R6
 U 1 1 5E011925
 P 5100 1275
 F 0 "R6" V 4893 1275 50  0000 C CNN
-F 1 "4.8k" V 4984 1275 50  0000 C CNN
+F 1 "4.7k" V 4984 1275 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 5030 1275 50  0001 C CNN
 F 3 "" H 5100 1275 50  0001 C CNN
 	1    5100 1275
@@ -450,4 +450,20 @@ Text Label 975  2700 0    50   ~ 0
 _INB
 Text Label 975  2800 0    50   ~ 0
 _PWM
+Text Notes 3725 1675 0    50   ~ 0
+RS:  164-7017
+Text Notes 4800 3000 0    50   ~ 0
+Point de test : image du courant
+Text Notes 5225 975  0    50   ~ 0
+RS : \n  466-3908 (verte)\n  861-0191 (rouge)\n
+Text Notes 4725 1400 0    50   ~ 0
+RS: 679-2184
+Text Notes 2100 1400 0    50   ~ 0
+RS: 391-214 (50V)
+Text Notes 1900 2375 0    50   ~ 0
+RS: 125-1190
+Text Notes 4100 2775 0    50   ~ 0
+RS: 740-9110
+Text Notes 5050 3150 0    50   ~ 0
+RS: 264-4141
 $EndSCHEMATC
