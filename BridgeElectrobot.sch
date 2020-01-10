@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:BridgeElectrobot-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -280,7 +281,7 @@ U 1 1 5E02A46F
 P 2400 4900
 F 0 "H2" H 2500 4949 50  0000 L CNN
 F 1 "MountingHole_Pad" V 2275 4525 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2400 4900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 2400 4900 50  0001 C CNN
 F 3 "~" H 2400 4900 50  0001 C CNN
 	1    2400 4900
 	1    0    0    -1  
@@ -304,7 +305,7 @@ U 1 1 5E02CB1D
 P 1975 4900
 F 0 "H1" H 2075 4949 50  0000 L CNN
 F 1 "MountingHole_Pad" V 1850 4525 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 1975 4900 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1975 4900 50  0001 C CNN
 F 3 "~" H 1975 4900 50  0001 C CNN
 	1    1975 4900
 	1    0    0    -1  
